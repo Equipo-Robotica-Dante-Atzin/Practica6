@@ -88,3 +88,12 @@ El ciclo principal se ejecuta repetidamente y consta de dos fases: movimiento ha
    - **delayMicroseconds(78);**: Establece un retardo de 78 microsegundos entre cada cambio de pulso, ajustando la velocidad del motor para el giro hacia la derecha.
    - **delay(1000);**: Pausa de 1 segundo antes de reiniciar el ciclo y comenzar nuevamente con el giro hacia la izquierda.
 
+Posteriormente se paso a la conexión de los componentes mediante la ayuda del siguiente esquema:
+
+![Imagen de WhatsApp 2024-10-19 a las 15 55 51_7e57b056](https://github.com/user-attachments/assets/85461b0e-4d55-42a3-a170-3b7198642dc7)
+
+Quedando de manera física de la siguiente manera:
+
+![image](https://github.com/user-attachments/assets/0557a777-b8b2-493c-a831-017199204ac0)
+
+Después simplemente corrimos el código y observamos el correcto funcionamiento del programa.
