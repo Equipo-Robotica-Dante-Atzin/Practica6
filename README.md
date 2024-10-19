@@ -61,31 +61,49 @@ void loop() {
 ```
 
 ### Variables Globales
+
 1. **int senal = 11;**: Define el pin digital 11 como la señal de salida que enviará los pulsos al driver del motor para controlar su movimiento.
-2. **bool estado = 0;**: Variable booleana que se alterna entre 0 (LOW) y 1 (HIGH) para generar pulsos que controlan los pasos del motor.
-3. **int giro = 10;**: Define el pin digital 10 como el que controla la dirección del motor, determinando si gira a la izquierda o a la derecha.
+   
+3. **bool estado = 0;**: Variable booleana que se alterna entre 0 (LOW) y 1 (HIGH) para generar pulsos que controlan los pasos del motor.
+   
+5. **int giro = 10;**: Define el pin digital 10 como el que controla la dirección del motor, determinando si gira a la izquierda o a la derecha.
 
 ### void setup()
+
 1. **pinMode(senal,OUTPUT);**: Configura el pin 11 como una salida, que se utilizará para enviar señales de pulsos al motor.
-2. **pinMode(giro,OUTPUT);**: Configura el pin 10 como una salida, para controlar la dirección del giro del motor.
+   
+3. **pinMode(giro,OUTPUT);**: Configura el pin 10 como una salida, para controlar la dirección del giro del motor.
 
 ### void loop()
+
 El ciclo principal se ejecuta repetidamente y consta de dos fases: movimiento hacia la izquierda y movimiento hacia la derecha.
 
 1. **Movimiento hacia la izquierda**:
+
    - **digitalWrite(giro,HIGH);**: Establece la señal en el pin 10 en `HIGH`, lo que indica al motor que gire hacia la izquierda.
+     
    - **for(long i = 0; i<51200; i++)**: Un bucle que se ejecuta 51200 veces. Dado que el driver está configurado con 6400 pulsos/revolución, este bucle hará que el motor complete 4 vueltas (6400 * 4 * 2 = 51200).
+   - 
    - **estado = !estado;**: Alterna el estado de la señal entre HIGH y LOW, generando los pulsos para el motor.
+     
    - **digitalWrite(senal,estado);**: Envía el valor actual de la señal al pin 11.
+     
    - **delayMicroseconds(20);**: Establece un retardo de 20 microsegundos entre cada cambio de pulso, controlando la velocidad del motor.
+     
    - **delay(1000);**: Pausa de 1 segundo antes de cambiar la dirección del motor.
 
-2. **Movimiento hacia la derecha**:
+3. **Movimiento hacia la derecha**:
+
    - **digitalWrite(giro,LOW);**: Establece la señal en el pin 10 en `LOW`, indicando al motor que gire hacia la derecha.
+     
    - **for(long i = 0; i<25600; i++)**: Un bucle que se ejecuta 25600 veces, haciendo que el motor complete 2 vueltas hacia la derecha (6400 * 2 * 2 = 25600).
+     
    - **estado = !estado;**: Alterna el estado de la señal nuevamente para generar los pulsos.
+     
    - **digitalWrite(senal,estado);**: Envía la señal de pulso al pin 11.
+     
    - **delayMicroseconds(78);**: Establece un retardo de 78 microsegundos entre cada cambio de pulso, ajustando la velocidad del motor para el giro hacia la derecha.
+     
    - **delay(1000);**: Pausa de 1 segundo antes de reiniciar el ciclo y comenzar nuevamente con el giro hacia la izquierda.
 
 Posteriormente se hizo la conexión de los componentes mediante la ayuda del siguiente esquema:
