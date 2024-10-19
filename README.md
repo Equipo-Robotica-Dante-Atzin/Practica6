@@ -83,7 +83,7 @@ El ciclo principal se ejecuta repetidamente y consta de dos fases: movimiento ha
    - **digitalWrite(giro,HIGH);**: Establece la señal en el pin 10 en `HIGH`, lo que indica al motor que gire hacia la izquierda.
      
    - **for(long i = 0; i<51200; i++)**: Un bucle que se ejecuta 51200 veces. Dado que el driver está configurado con 6400 pulsos/revolución, este bucle hará que el motor complete 4 vueltas (6400 * 4 * 2 = 51200).
-   - 
+     
    - **estado = !estado;**: Alterna el estado de la señal entre HIGH y LOW, generando los pulsos para el motor.
      
    - **digitalWrite(senal,estado);**: Envía el valor actual de la señal al pin 11.
