@@ -88,7 +88,7 @@ El ciclo principal se ejecuta repetidamente y consta de dos fases: movimiento ha
    - **delayMicroseconds(78);**: Establece un retardo de 78 microsegundos entre cada cambio de pulso, ajustando la velocidad del motor para el giro hacia la derecha.
    - **delay(1000);**: Pausa de 1 segundo antes de reiniciar el ciclo y comenzar nuevamente con el giro hacia la izquierda.
 
-Posteriormente se paso a la conexión de los componentes mediante la ayuda del siguiente esquema:
+Posteriormente se hizo la conexión de los componentes mediante la ayuda del siguiente esquema:
 
 ![Imagen de WhatsApp 2024-10-19 a las 15 55 51_7e57b056](https://github.com/user-attachments/assets/85461b0e-4d55-42a3-a170-3b7198642dc7)
 
@@ -96,4 +96,23 @@ Quedando de manera física de la siguiente manera:
 
 ![image](https://github.com/user-attachments/assets/0557a777-b8b2-493c-a831-017199204ac0)
 
-Después simplemente corrimos el código y observamos el correcto funcionamiento del programa.
+Después simplemente corrimos el código y observamos el correcto funcionamiento del ejercicio.
+
+## Conclusiones
+
+***Atzin Morales Alejandre:*** 
+
+
+
+***Dante Mejía Silva:*** 
+A través de esta práctica de laboratorio, se adquirieron conocimientos fundamentales sobre el control de motores a pasos utilizando un microcontrolador y el desarrollo de código en Arduino. Se comprendió la importancia de controlar la dirección y el número de vueltas que un motor a pasos puede realizar, lo cual se logra mediante el envío de pulsos desde el microcontrolador. Este proceso implica el uso de señales digitales para activar el motor en la secuencia adecuada, permitiendo que el sistema ejecute movimientos precisos y repetitivos. 
+
+Un aspecto crucial de esta práctica fue la utilización del driver JSSD250M, que actúa como un intermediario entre el microcontrolador y el motor. Se aprendió que este componente es esencial para adaptar las señales de control a los requerimientos de potencia del motor, lo que protege tanto el microcontrolador como el propio motor de posibles daños. Al comprender cómo funcionan estos drivers, se adquirió una visión más profunda sobre la interconexión entre componentes electrónicos en un sistema robótico.
+
+El desarrollo del código nos permitió explorar la generación de pulsos digitales mediante la manipulación de los estados de los pines en el Arduino. Además, se abordó el cambio de dirección del motor programáticamente, lo cual fue logrado al modificar la señal de un pin específico que determina si el motor gira hacia la izquierda o hacia la derecha.
+
+En conclusión, esta práctica no solo proporcionó una base sólida en los conceptos fundamentales de la robótica y el control de motores a pasos, sino que también mejoró nuestra capacidad para programar y gestionar movimientos precisos en sistemas automatizados. Estos aprendizajes son aplicables en diversos proyectos futuros, donde el manejo de motores a pasos es un componente crucial en el diseño de sistemas robóticos y automatizados.
+
+## Referencias Bibliográficas 
+
+[1] 	EpsonCompany, «Especialistas en automatización industrial». 2024, https://www.epson.es/es_ES/robots
