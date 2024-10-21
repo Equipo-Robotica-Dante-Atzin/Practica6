@@ -119,8 +119,13 @@ Después simplemente corrimos el código y observamos el correcto funcionamiento
 ## Conclusiones
 
 ***Atzin Morales Alejandre:*** 
+A lo largo de esta práctica, se logró comprender como controlar un motor a pasos y los parámetros que hay que en cuenta para esto. Se comprendió cómo generar movimientos precisos, tanto en dirección como en velocidad, mediante la manipulación de señales digitales que controlan el número de pasos del motor. 
 
+Un elemento clave en el desarrollo fue el driver JSSD250M, que permitió adaptar las señales de bajo voltaje provenientes del microcontrolador a los requerimientos de potencia necesarios para el correcto funcionamiento del motor a pasos. El uso del driver no solo facilitó el manejo eficiente del motor, sino que también garantizó la protección tanto del microcontrolador como del motor frente a sobrecorrientes o sobrecalentamientos. 
 
+Además, el desarrollo del código implicó la generación de pulsos precisos, por lo que este ejercicio nos permitió profundizar en el uso de ciclos y retardos para controlar la velocidad del motor, así como en la configuración del driver para cambiar el número de micropasos.
+
+En resumen, esta práctica no solo reforzó los conceptos básicos de control de motores a pasos, sino que también nos proporcionó una comprensión más amplia de la integración de componentes electrónicos en sistemas robóticos. Estas habilidades son esenciales para futuros proyectos que requieran el control preciso de actuadores, como es el caso de muchos sistemas automatizados en la industria.
 
 ***Dante Mejía Silva:*** 
 A través de esta práctica de laboratorio, se adquirieron conocimientos fundamentales sobre el control de motores a pasos utilizando un microcontrolador y el desarrollo de código en Arduino. Se comprendió la importancia de controlar la dirección y el número de vueltas que un motor a pasos puede realizar, lo cual se logra mediante el envío de pulsos desde el microcontrolador. Este proceso implica el uso de señales digitales para activar el motor en la secuencia adecuada, permitiendo que el sistema ejecute movimientos precisos y repetitivos. 
